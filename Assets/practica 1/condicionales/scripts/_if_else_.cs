@@ -18,7 +18,7 @@ public class _if_else_ : MonoBehaviour
     }
     void cambio()
     {
-        if (tamaño <= 2)
+        if (tamaño <= 1)
         {
             escala.localScale = new Vector3(1,1,1);
         }
@@ -29,11 +29,11 @@ public class _if_else_ : MonoBehaviour
     }
     void _Tamaño_()
     {
-        if(Input.GetKeyDown("up"))
+        if(Input.GetKeyDown("up") && tamaño == 1)
         {
             tamaño += 1;
         }
-        if (Input.GetKeyDown("down"))
+        if (Input.GetKeyDown("down") && tamaño == 2)
         {
             tamaño -= 1;
         }
