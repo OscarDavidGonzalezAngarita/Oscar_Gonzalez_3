@@ -11,7 +11,7 @@ public class _PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        GameManager.GetInstance();
+        //GameManager.GetInstance();
     }
     void Update()
     {
