@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         {
             case GameState.Menu:
                 currentGameState = GameState.Menu;
-                print("menu");
+                
                 playerControlerr.enabled = false;
                 jugador.enabled = false;
                 break;
@@ -52,13 +52,13 @@ public class GameManager : MonoBehaviour
                 currentGameState = GameState.InGame;
                 playerControlerr.enabled = true;
                 jugador.enabled = true;
-                print("juego");
+                
                 break;
             case GameState.GameOver:
                 currentGameState = GameState.GameOver;
                 playerControlerr.enabled = false;
                 jugador.enabled = false;
-                print("muerto");
+                
                 break;
             default:
                 currentGameState = GameState.Menu;
